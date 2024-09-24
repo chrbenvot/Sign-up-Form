@@ -6,3 +6,139 @@
     font-style: normal;
 
 }
+body{
+    margin:0px;
+}
+body>div{
+    display:flex;
+    height:100vh;
+
+}
+.picContainer{
+    background-image: url("leaves.png");
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+}
+.sndContainer{
+    display:flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    justify-content: space-around;
+    background-color: rgb(240, 235, 235);
+}
+#credit{
+    position: absolute;
+    bottom: 7px;
+    color:white;
+}
+#odin{
+    color:white;
+    font-family: "norsebold";
+    font-size: 100px;
+}
+.odinContainer{
+    display:flex;
+    background-color: rgba(0,0,0,0.5);
+    width:100%;
+    justify-content: center;
+    height:15%;
+    align-items: center;
+    top:-25%;
+    position: relative;
+}
+.odinContainer>img{
+    height:80%;
+}
+#hero{
+    padding-right:300px;
+    font-weight: 550;
+    font-size: 30px;
+    padding-left: 50px;
+}
+form{
+    display:flex;
+    flex-basis:50%;
+    flex-direction: column;
+}
+#actualForm{
+    background-color: white;
+    padding-left: 50px;
+    flex-basis:40%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-right:100px;
+    width:100%;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    box-shadow: 0px 4px 7px 3px rgba(0,0,0,0.45);
+}
+#login{
+    padding-left: 50px;
+}
+#cto{
+    flex-basis: 100%;
+    font-size: 30px;
+    font-weight: 600;
+}
+#actualForm>div{
+    display:flex;
+    flex-direction: column;
+    width:30%;
+    margin-right:50px;
+}
+#btnContainer{
+   
+    flex-basis: 100%;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    margin-left:50px;
+    
+    
+}
+label{
+    color:rgb(78, 75, 75);
+}
+input{
+    width:70%;
+    border: grey solid 1px;
+    padding:4px;
+    border-radius:4px;
+}
+input:focus{
+    border-color: rgb(121, 121, 233);
+    outline: 0;
+}
+input:invalid{
+    border: rgb(172, 60, 60) solid 2px;
+}
+button{
+    background-color: #596D48;
+    color:white;
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius:10%;
+    border: none;
+    font-weight:700;
+}
+#login{
+    position:relative;
+    top:-100px;
+    font-size: 20px;
+}
+a{
+    text-decoration:none;
+    color:#596D48;
+    font-weight:600;
+}
+a:visited{
+    color:#596D48;
+}
+input[name$="Name"]{
+    text-transform: capitalize;
+}

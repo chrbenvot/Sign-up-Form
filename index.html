@@ -4,42 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="overallContainer">
         <div class="picContainer">
-            <div>
+            <div class="odinContainer">
                 <img src="odin.png" alt="logo">
-                <p>Odin</p>            
+                <p id="odin">Odin</p>            
             </div>
-            <p>Photo by <u>Halie West</u> on <u>Unsplash</u></p>
+            <p id="credit">Photo by <u>Halie West</u> on <u>Unsplash</u></p>
         </div>
         <div class="sndContainer">
             <div>
-                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
+                <p id="hero">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
                     Sign up <em>now</em> to get started. <br><br> You <em>know</em> you want to.
                 </p>
             </div>
-            <form action="">
-                <div><p>Let's do this!</p>
-                <label for="firstName">FIRST NAME</label>
-                <input type="text" id="firstName" name="firstName">
-                <label for="lastName">LAST NAME</label>
-                <input type="text" id="lastName" name="lastName">
+            <form action="" method="post" id="form">
+                <div id="actualForm">
+                <div id="cto"><p >Let's do this!</p></div>
+                
+                <div>
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                <div>
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" id="lastName" name="lastName">
+            </div>
+            <div>
                 <label for="email">EMAIL</label>
                 <input type="email" id="email" name="email">
+            </div>
+            <div> 
                 <label for="phone">PHONE NUMBER</label>
-                <input type="tel" id="phone" name="phone">
+                <input type="tel" id="phone" name="phone"></div>
+            <div>
                 <label for="pwd">PASSWORD</label>
                 <input type="password" id="pwd" name="pwd">
+            </div>
+            <div>
                 <label for="pwdConfirm">CONFIRM PASSWORD</label>
                 <input type="password" id="pwdConfirm" name="pwdConfirm">
             </div>
-            <div class="btnContainer">
+        </div>
+            <div id="btnContainer">
                 <button type="submit">Create Account</button>
             </div>
             </form>
-            <p>Already have an account? <a href="">Log in</a></p>
+            <p id="login">Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
 </body>
